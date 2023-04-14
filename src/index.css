@@ -1,0 +1,33 @@
+@import-normalize; /* bring in normalize.css styles */
+
+:root {
+  --var-primary-bg-color: #cfaeae;
+  --var-primary-text-color: #484881;
+
+  --var-primary-text-color-grey: #5f6775;
+  --var-accent-color: #fd5103;
+  --var-accent-color-lighter: #fe7031;
+  --var-secondary-bg-color: #f7f6f9;
+}
+
+[dark] {
+  --var-primary-bg-color: #484881;
+  --var-primary-text-color: #cfaeae;
+  --var-secondary-bg-color: black;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--var-primary-bg-color);
+  color: var(--var-primary-text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
